@@ -92,7 +92,11 @@ newArray.sort()
 
 print("Failure rate is", ppm(huml, 0, 200), "per million")
 y = graph(newArray)
+
 plt.figure(figsize=(6, 6))
 plt.plot(newArray, y, color='black', linestyle='solid')
+plt.xlabel("Average Humerus Length (mm)")
+plt.ylabel("Cumulative Density")
+plt.title("Humerus Length Distribution")
 plt.scatter(newArray, y, marker='o', s=25, color='red')
 plt.show()
